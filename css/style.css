@@ -456,11 +456,15 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	background: url('../img/header-bg.jpg') right bottom no-repeat;
-	background-size: contain;
-	padding:110px 0 100px 0;
-	height:auto;
+	/* background: url('../img/portfolio/portfolio.jpg') right center no-repeat; 
+	background-size: contain; */
+	height: 95vh;
+    padding: 50px 0;
 	background-color: #FBFBFB;
+}
+.hero .main{
+	width:100%;
+	border-radius:50%;
 }
 .hero h1 {
 	font-size: 120px;
@@ -486,7 +490,7 @@ table {
 }
 .hero p {
 	letter-spacing:1px;
-	color:#fff;
+	color:#10405c;
 	font-size: 15px;
 }
 /* Boucing Arrow Animation */
@@ -541,7 +545,7 @@ table {
 .scrollto {
 	padding: 150px 0px 0px 0px;
 	display:block;
-	color:#FFF;
+	color:#ffffff;
 	text-decoration:none;
 	width:200px;
 	margin:0 auto;
@@ -551,6 +555,7 @@ table {
 	padding:10px;
 }
 .scrollto--arrow img {
+	background: #10405c;
 	animation:arrowbounce 1s alternate infinite;
 	-moz-animation:arrowbounce 1s alternate infinite;
 	/* Firefox */-webkit-animation:arrowbounce 1s alternate infinite;
