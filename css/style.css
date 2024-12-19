@@ -778,6 +778,24 @@ i.respons {
   .flip-card-back p{
 	color: white;
   }
+  .raw-text{
+	text-transform: uppercase;
+	color:#10405c;
+  }
+  .raw-btn {
+	display:inline-block;
+	padding:10px 20px;
+	color: #10405c;
+    border-color: #10405c;
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing:1px;
+}
+.raw-btn:hover{
+    background: #10405c;
+    color: #fff;
+    border-color: #10405c;
+}
 .swag {
 	padding:75px 0;
 }
