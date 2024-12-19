@@ -575,6 +575,7 @@ table {
 }
 /* ==========================================================================Intro========================================================================== */
 .intro p {
+	font-size: 16px;
 	margin:50px 0 0;
 }
 h1.arrow {
@@ -781,20 +782,20 @@ i.respons {
   .raw-text{
 	text-transform: uppercase;
 	color:#10405c;
+	font-size:1.2em;
   }
   .raw-btn {
 	display:inline-block;
 	padding:10px 20px;
-	color: #10405c;
+	color: #fff;
     border-color: #10405c;
+	background: #10405c;
 	text-transform:uppercase;
 	font-weight:bold;
 	letter-spacing:1px;
 }
-.raw-btn:hover{
-    background: #10405c;
-    color: #fff;
-    border-color: #10405c;
+a.raw-btn:hover{
+    color: #fff !important;
 }
 .swag {
 	padding:75px 0;
