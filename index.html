@@ -456,6 +456,31 @@
       speed: 2000 // How many milliseconds until the next word show.
     });
     </script>
-	
+
+  <!-- CARD ROTATE SCRIPT -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const flipCards = document.querySelectorAll(".flip-card-inner");
+
+          const observer = new IntersectionObserver(
+              (entries) => {
+                  entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                          // Add the flip class to start the flip
+                          entry.target.classList.add("flip-on-scroll");
+
+                          // Remove the flip class after 1 second to flip back
+                          setTimeout(() => {
+                              entry.target.classList.remove("flip-on-scroll");
+                          }, 1000); // 1-second flip duration
+                      }
+                  });
+              },
+              { threshold: 0.5 } // Trigger when 50% of the card is visible
+          );
+
+          flipCards.forEach((card) => observer.observe(card));
+      });
+    </script>
     </body>
 </html>
