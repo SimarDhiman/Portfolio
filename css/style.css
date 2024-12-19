@@ -76,10 +76,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 }
 audio,canvas,video {
 	display:inline-block;
-	*display:inline;
-	*zoom: 1;
+	display:inline;
+	zoom: 1;
 }
-* Remove excess height in iOS 5 devices. */
+/* Remove excess height in iOS 5 devices. */
 audio:not([controls]) {
 	display:none;
 	height:0;
@@ -234,13 +234,13 @@ legend {
 	border:0;
 	padding:0;
 	white-space:normal;
-	*margin-left:-7px;
+	margin-left:-7px;
 }
 button,input,select,textarea {
 	font-size:100%;
-	/margin:0;
+	margin:0;
 	vertical-align:baseline;
-	*vertical-align:middle;
+	vertical-align:middle;
 }
 button,input {
 	line-height:normal;
@@ -248,7 +248,7 @@ button,input {
 button,html input[type="button"],input[type="reset"],input[type="submit"] {
 	-webkit-appearance:button;
 	cursor:pointer;
-	*overflow:visible;
+	overflow:visible;
 }
 button[disabled],input[disabled] {
 	cursor:default;
@@ -256,8 +256,8 @@ button[disabled],input[disabled] {
 input[type="checkbox"],input[type="radio"] {
 	box-sizing:border-box;
 	padding:0;
-	*height:13px;
-	*width:13px;
+	height:13px;
+	width:13px;
 }
 input[type="search"] {
 	-webkit-appearance:textfield;
@@ -461,10 +461,21 @@ table {
 	height: 95vh;
     padding: 50px 0;
 	background-color: #FBFBFB;
+	position: relative;
+	overflow: hidden;
 }
 .hero .main{
 	width:100%;
-	border-radius:50%;
+	border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 30%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 30%);
+    transition: none;
+    display: block;
+    margin-left: auto;
+
 }
 .hero h1 {
 	font-size: 120px;
@@ -543,7 +554,7 @@ table {
 	}
 }
 .scrollto {
-	padding: 150px 0px 0px 0px;
+	padding: 110px 0px 0px 0px;
 	display:block;
 	color:#ffffff;
 	text-decoration:none;
