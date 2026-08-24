@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="50%" style="stop-color:#0d2847"/>
+      <stop offset="100%" style="stop-color:#00d4ff"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.04)"/>
+    </linearGradient>
+    <linearGradient id="cta3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff"/>
+      <stop offset="100%" style="stop-color:#7b2ff7"/>
+    </linearGradient>
+    <radialGradient id="plate" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.1)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.02)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg3)"/>
+
+  <!-- Dot grid -->
+  <g opacity="0.04">
+    <pattern id="dots3" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">
+      <circle cx="12.5" cy="12.5" r="1" fill="white"/>
+    </pattern>
+    <rect width="800" height="500" fill="url(#dots3)"/>
+  </g>
+
+  <!-- Central plate -->
+  <circle cx="400" cy="230" r="130" fill="url(#plate)" stroke="rgba(0,212,255,0.15)" stroke-width="2"/>
+  <circle cx="400" cy="230" r="110" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Pizza slice -->
+  <g transform="translate(370, 190)">
+    <path d="M0,0 L50,-25 L60,30 Z" fill="#e8a735" opacity="0.85"/>
+    <circle cx="15" cy="-2" r="5" fill="#c0392b" opacity="0.7"/>
+    <circle cx="35" cy="5" r="4" fill="#c0392b" opacity="0.6"/>
+    <circle cx="25" cy="12" r="3" fill="#27ae60" opacity="0.5"/>
+    <path d="M50,-25 L60,30" stroke="#d4a017" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- Burger -->
+  <g transform="translate(340, 240)">
+    <ellipse cx="40" cy="0" rx="35" ry="10" fill="#d4781e" opacity="0.8"/>
+    <rect x="8" y="4" width="64" height="8" rx="2" fill="#a0522d" opacity="0.7"/>
+    <rect x="6" y="14" width="68" height="5" rx="1" fill="#27ae60" opacity="0.6"/>
+    <rect x="10" y="21" width="60" height="6" rx="1" fill="#e74c3c" opacity="0.5"/>
+    <ellipse cx="40" cy="32" rx="35" ry="8" fill="#c77520" opacity="0.7"/>
+  </g>
+
+  <!-- Sushi -->
+  <g transform="translate(440, 200)">
+    <rect x="0" y="0" width="30" height="18" rx="4" fill="#f5f5dc" opacity="0.7"/>
+    <ellipse cx="15" cy="0" rx="14" ry="6" fill="#e8734a" opacity="0.75"/>
+    <rect x="-2" y="6" width="34" height="3" rx="1" fill="#1a1a2e" opacity="0.4"/>
+  </g>
+
+  <!-- Donut -->
+  <g transform="translate(360, 160)">
+    <circle cx="0" cy="0" r="18" fill="#d4781e" opacity="0.7"/>
+    <circle cx="0" cy="0" r="7" fill="#0d2847" opacity="0.9"/>
+    <path d="M-16,-6 Q-10,-14 0,-16 Q10,-14 16,-6 Q14,-2 10,-4 Q4,-10 -4,-10 Q-10,-8 -14,-2 Z" fill="#e84393" opacity="0.5"/>
+    <circle cx="-8" cy="-10" r="2" fill="#FFE800" opacity="0.6"/>
+    <circle cx="4" cy="-12" r="1.5" fill="#00d4ff" opacity="0.5"/>
+    <circle cx="10" cy="-8" r="2" fill="#FFE800" opacity="0.5"/>
+  </g>
+
+  <!-- Coffee cup -->
+  <g transform="translate(450, 260)">
+    <rect x="0" y="0" width="28" height="32" rx="4" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <ellipse cx="14" cy="2" rx="14" ry="5" fill="rgba(101,67,33,0.7)"/>
+    <path d="M28,10 Q38,10 38,20 Q38,28 28,28" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+    <!-- Steam -->
+    <path d="M8,-8 Q6,-15 10,-20" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+    <path d="M16,-6 Q14,-14 18,-18" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Floating recipe cards -->
+  <rect x="80" y="80" width="160" height="100" rx="10" fill="rgba(10,10,15,0.85)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+  <rect x="90" y="92" width="60" height="40" rx="6" fill="rgba(0,212,255,0.08)"/>
+  <text x="120" y="116" font-family="sans-serif" font-size="18" fill="rgba(0,212,255,0.4)" text-anchor="middle">🍕</text>
+  <rect x="160" y="95" width="65" height="6" rx="2" fill="rgba(255,255,255,0.3)"/>
+  <rect x="160" y="107" width="50" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+  <rect x="160" y="117" width="55" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+  <text x="95" y="160" font-family="sans-serif" font-size="8" fill="#FFE800">★★★★★</text>
+  <rect x="165" y="152" width="50" height="16" rx="8" fill="url(#cta3)" opacity="0.8"/>
+  <text x="190" y="163" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">BLOG</text>
+
+  <rect x="560" y="100" width="160" height="100" rx="10" fill="rgba(10,10,15,0.85)" stroke="rgba(123,47,247,0.2)" stroke-width="1"/>
+  <rect x="570" y="112" width="60" height="40" rx="6" fill="rgba(123,47,247,0.08)"/>
+  <text x="600" y="136" font-family="sans-serif" font-size="18" fill="rgba(123,47,247,0.5)" text-anchor="middle">🍜</text>
+  <rect x="640" y="115" width="65" height="6" rx="2" fill="rgba(255,255,255,0.3)"/>
+  <rect x="640" y="127" width="50" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+  <rect x="640" y="137" width="55" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+  <text x="575" y="180" font-family="sans-serif" font-size="8" fill="#FFE800">★★★★☆</text>
+  <rect x="645" y="172" width="50" height="16" rx="8" fill="rgba(123,47,247,0.5)"/>
+  <text x="670" y="183" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">FLIP</text>
+
+  <!-- Floating food icons -->
+  <text x="130" y="270" font-family="sans-serif" font-size="28" opacity="0.3">🥗</text>
+  <text x="650" y="250" font-family="sans-serif" font-size="24" opacity="0.25">🍰</text>
+  <text x="100" y="380" font-family="sans-serif" font-size="22" opacity="0.2">🌮</text>
+  <text x="680" y="370" font-family="sans-serif" font-size="26" opacity="0.2">🍣</text>
+  <text x="200" y="420" font-family="sans-serif" font-size="20" opacity="0.15">🍩</text>
+  <text x="580" y="420" font-family="sans-serif" font-size="22" opacity="0.15">☕</text>
+
+  <!-- Stats badges -->
+  <rect x="100" y="310" width="120" height="55" rx="10" fill="rgba(10,10,15,0.85)" stroke="rgba(0,212,255,0.15)" stroke-width="1"/>
+  <text x="115" y="332" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">RECIPES</text>
+  <text x="115" y="352" font-family="sans-serif" font-size="16" fill="#00d4ff" font-weight="bold">120+</text>
+
+  <rect x="580" y="310" width="120" height="55" rx="10" fill="rgba(10,10,15,0.85)" stroke="rgba(123,47,247,0.15)" stroke-width="1"/>
+  <text x="595" y="332" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.35)">INTERACTIONS</text>
+  <text x="595" y="352" font-family="sans-serif" font-size="16" fill="#a855f7" font-weight="bold">2.5K</text>
+
+  <!-- Title overlay -->
+  <text x="400" y="478" font-family="'Courier New', monospace" font-size="13" fill="rgba(255,255,255,0.35)" text-anchor="middle" letter-spacing="4">FOODER — ANGULARJS + BOOTSTRAP</text>
+</svg>

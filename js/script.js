@@ -272,4 +272,25 @@ $(document).ready(function () {
 
   $(window).on('scroll', animateCounters);
   animateCounters();
+
+  /* =================================================================
+     THEME TOGGLE
+     ================================================================= */
+  var themeBtn = document.getElementById('theme-toggle');
+  var themeIcon = document.getElementById('theme-icon');
+  var savedTheme = localStorage.getItem('portfolio-theme');
+
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-mode');
+    themeIcon.className = 'fa fa-sun-o';
+  }
+
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      document.body.classList.toggle('light-mode');
+      var isLight = document.body.classList.contains('light-mode');
+      themeIcon.className = isLight ? 'fa fa-sun-o' : 'fa fa-moon-o';
+      localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
+    });
+  }
 });

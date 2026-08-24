@@ -19,7 +19,7 @@
     <!-- Navigation -->
     <nav class="navbar-custom" id="navbar">
       <div class="container">
-        <a href="#top" class="nav-logo">&lt;SD /&gt;</a>
+        <a href="#top" class="nav-logo"><span class="logo-bracket">{</span>SD<span class="logo-bracket">}</span></a>
         <ul class="nav-links" id="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -29,9 +29,14 @@
           <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
+        <div class="nav-right">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <i class="fa fa-moon-o" id="theme-icon"></i>
+          </button>
+          <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </nav>
 
@@ -62,14 +67,14 @@
               <a href="https://github.com/simardhiman" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a>
               <a href="mailto:dhiman.simar22@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
             </div>
+            <div class="scroll-indicator animated fadeInUp delay-1s">
+              <a href="#about">
+                <span>SCROLL</span>
+                <div class="scroll-line"></div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="scroll-indicator">
-        <a href="#about">
-          <span>SCROLL</span>
-          <div class="scroll-line"></div>
-        </a>
       </div>
     </header>
 
@@ -84,14 +89,7 @@
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
             <p class="about-bio reveal-on-scroll">
-              Technologist with <span class="highlight">1.9 years</span> of full-stack software engineering experience,
-              now specializing in <span class="highlight">Data Science</span>,
-              <span class="highlight">Machine Learning</span>, and
-              <span class="highlight">AI</span> through an MS in Data Science.
-              My experience spans building and maintaining production web applications
-              (Angular, TypeScript, SQL, MongoDB, REST APIs) as well as applied data analysis —
-              e-commerce inventory analytics, customer purchase pattern analysis, and AI governance research.
-              I'm comfortable translating ambiguous business questions into structured, data-backed answers.
+              Software engineer with <span class="highlight">1.9 years</span> of full-stack development experience, now specializing in <span class="highlight">Data Science</span>, <span class="highlight">Machine Learning</span>, and <span class="highlight">AI</span> through an MS in Data Science. Experience spans building and maintaining production web applications (Angular, TypeScript, SQL, MongoDB, REST APIs) as well as applied data analysis — e-commerce inventory analytics, customer purchase pattern analysis, and AI governance research. Comfortable translating ambiguous business questions into structured, data-backed answers.
             </p>
           </div>
         </div>
@@ -226,7 +224,7 @@
             <div class="row project-row">
               <div class="col-md-5">
                 <div class="project-visual has-image">
-                  <img src="img/portfolio/Fooder.png" alt="FooDer">
+                  <img src="img/portfolio/fooder-app.svg" alt="FooDer">
                 </div>
               </div>
               <div class="col-md-7">
@@ -379,7 +377,9 @@
       <div class="container">
         <div class="row writer-row">
           <div class="col-md-6 reveal-on-scroll">
-            <div class="writer-image" style="background-image:url(img/about3.png)"></div>
+            <div class="writer-image has-svg">
+              <img src="img/portfolio/beyond-code.svg" alt="Beyond Code — Phoenix Flames">
+            </div>
           </div>
           <div class="col-md-6 reveal-on-scroll">
             <div class="writer-content">
