@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a3e"/>
+      <stop offset="50%" style="stop-color:#4a1d9b"/>
+      <stop offset="100%" style="stop-color:#7b2ff7"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.04)"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff"/>
+      <stop offset="100%" style="stop-color:#0088aa"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b2ff7"/>
+      <stop offset="100%" style="stop-color:#5a1db8"/>
+    </linearGradient>
+    <linearGradient id="line1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFE800"/>
+      <stop offset="100%" style="stop-color:#ffb300"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg2)"/>
+
+  <!-- Dot grid -->
+  <g opacity="0.05">
+    <pattern id="dots2" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">
+      <circle cx="12.5" cy="12.5" r="1" fill="white"/>
+    </pattern>
+    <rect width="800" height="500" fill="url(#dots2)"/>
+  </g>
+
+  <!-- Dashboard mockup -->
+  <rect x="80" y="50" width="640" height="400" rx="12" fill="url(#card2)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- Top bar -->
+  <rect x="80" y="50" width="640" height="36" rx="12" fill="rgba(0,0,0,0.3)"/>
+  <rect x="80" y="74" width="640" height="12" fill="rgba(0,0,0,0.3)"/>
+  <circle cx="102" cy="68" r="5" fill="#ff5f57"/>
+  <circle cx="120" cy="68" r="5" fill="#febc2e"/>
+  <circle cx="138" cy="68" r="5" fill="#28c840"/>
+
+  <!-- Sidebar -->
+  <rect x="80" y="86" width="120" height="364" fill="rgba(0,0,0,0.2)"/>
+  <rect x="95" y="105" width="90" height="10" rx="3" fill="rgba(0,212,255,0.5)"/>
+  <rect x="95" y="130" width="70" height="8" rx="2" fill="rgba(255,255,255,0.15)"/>
+  <rect x="95" y="150" width="80" height="8" rx="2" fill="rgba(255,255,255,0.25)"/>
+  <rect x="95" y="170" width="60" height="8" rx="2" fill="rgba(255,255,255,0.15)"/>
+  <rect x="95" y="190" width="75" height="8" rx="2" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- KPI Cards row -->
+  <rect x="215" y="100" width="115" height="60" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+  <text x="230" y="122" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">REVENUE</text>
+  <text x="230" y="143" font-family="sans-serif" font-size="16" fill="#00d4ff" font-weight="bold">80%</text>
+
+  <rect x="345" y="100" width="115" height="60" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(123,47,247,0.3)" stroke-width="1"/>
+  <text x="360" y="122" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">PRODUCTS</text>
+  <text x="360" y="143" font-family="sans-serif" font-size="16" fill="#a855f7" font-weight="bold">28.1%</text>
+
+  <rect x="475" y="100" width="115" height="60" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,232,0,0.3)" stroke-width="1"/>
+  <text x="490" y="122" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">CATEGORIES</text>
+  <text x="490" y="143" font-family="sans-serif" font-size="16" fill="#FFE800" font-weight="bold">71</text>
+
+  <rect x="605" y="100" width="100" height="60" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+  <text x="618" y="122" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">ORDERS</text>
+  <text x="618" y="143" font-family="sans-serif" font-size="16" fill="#00d4ff" font-weight="bold">110K+</text>
+
+  <!-- Bar Chart -->
+  <rect x="215" y="180" width="280" height="200" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="230" y="200" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">Pareto Analysis — Revenue by Category</text>
+
+  <!-- Chart grid lines -->
+  <line x1="240" y1="220" x2="480" y2="220" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="240" y1="250" x2="480" y2="250" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="240" y1="280" x2="480" y2="280" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="240" y1="310" x2="480" y2="310" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="240" y1="340" x2="480" y2="340" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="240" y1="360" x2="480" y2="360" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Bars -->
+  <rect x="248" y="230" width="18" height="130" rx="3" fill="url(#bar1)" opacity="0.9"/>
+  <rect x="274" y="250" width="18" height="110" rx="3" fill="url(#bar1)" opacity="0.8"/>
+  <rect x="300" y="268" width="18" height="92" rx="3" fill="url(#bar1)" opacity="0.7"/>
+  <rect x="326" y="285" width="18" height="75" rx="3" fill="url(#bar2)" opacity="0.8"/>
+  <rect x="352" y="300" width="18" height="60" rx="3" fill="url(#bar2)" opacity="0.7"/>
+  <rect x="378" y="312" width="18" height="48" rx="3" fill="url(#bar2)" opacity="0.6"/>
+  <rect x="404" y="325" width="18" height="35" rx="3" fill="url(#bar2)" opacity="0.5"/>
+  <rect x="430" y="335" width="18" height="25" rx="3" fill="url(#bar2)" opacity="0.4"/>
+  <rect x="456" y="342" width="18" height="18" rx="3" fill="url(#bar2)" opacity="0.3"/>
+
+  <!-- Cumulative line -->
+  <polyline points="257,348 283,330 309,312 335,297 361,285 387,276 413,270 439,266 465,264" fill="none" stroke="url(#line1)" stroke-width="2" opacity="0.8"/>
+  <circle cx="257" cy="348" r="3" fill="#FFE800"/>
+  <circle cx="335" cy="297" r="3" fill="#FFE800"/>
+  <circle cx="413" cy="270" r="3" fill="#FFE800"/>
+  <circle cx="465" cy="264" r="3" fill="#FFE800"/>
+
+  <!-- 80% line -->
+  <line x1="240" y1="270" x2="480" y2="270" stroke="#FFE800" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <text x="482" y="273" font-family="sans-serif" font-size="8" fill="#FFE800" opacity="0.7">80%</text>
+
+  <!-- Pie Chart -->
+  <rect x="510" y="180" width="195" height="200" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="525" y="200" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">Order Composition</text>
+
+  <!-- Pie chart -->
+  <circle cx="607" cy="290" r="55" fill="none" stroke="rgba(0,212,255,0.8)" stroke-width="24" stroke-dasharray="311 346" stroke-dashoffset="0"/>
+  <circle cx="607" cy="290" r="55" fill="none" stroke="rgba(123,47,247,0.6)" stroke-width="24" stroke-dasharray="35 346" stroke-dashoffset="-311"/>
+  <text x="607" y="286" font-family="sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">89.7%</text>
+  <text x="607" y="300" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.4)" text-anchor="middle">Single-Category</text>
+
+  <!-- Legend -->
+  <rect x="560" y="356" width="8" height="8" rx="2" fill="#00d4ff"/>
+  <text x="574" y="364" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.4)">Single</text>
+  <rect x="620" y="356" width="8" height="8" rx="2" fill="#7b2ff7"/>
+  <text x="634" y="364" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.4)">Multi</text>
+
+  <!-- Title overlay -->
+  <text x="400" y="478" font-family="'Courier New', monospace" font-size="13" fill="rgba(255,255,255,0.35)" text-anchor="middle" letter-spacing="4">OLIST INVENTORY — PYTHON + PANDAS</text>
+</svg>

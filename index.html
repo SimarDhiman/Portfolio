@@ -4,483 +4,459 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Website Title -->
-    <title>SIMAR - SOFTWARE ENGINEER</title>
-    <!-- Bootstrap -->
+    <title>SIMAR DHIMAN — Data Scientist & Full Stack Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Font-Awesome -->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<!-- Lightbox -->
-	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
-    <!-- Text Rotator-->
-	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
-	<!-- FlexSlider -->
-    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
-	<!-- Theme Style -->
-    <link href="css/style.css" rel="stylesheet">
-	<!-- Animations -->
     <link href="css/animate.css" rel="stylesheet">
-	<!-- Custom Favicon -->
-	<!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />  -->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="assets/html5shiv/html5shiv.js"></script>
-    <script src="assets/respond/respond.min.js"></script>
-    <![endif]-->
+    <link href="css/style.css" rel="stylesheet">
   </head>
-    <body id="top">
+  <body id="top">
 
-      <!-- ****************************** Preloader ************************** -->
-      <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
+    <!-- Navigation -->
+    <nav class="navbar-custom" id="navbar">
+      <div class="container">
+        <a href="#top" class="nav-logo">&lt;SD /&gt;</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
 
-	  	<!-- ==========================
-        HEADER SECTION 
-        =========================== -->
-        <header id="home">
-		    <!-- creative menu -->
-            <div class="container-fluid">
-              <div class="row">
-                <div class="menu-wrap">
-				<nav class="menu">
-				    <!-- Menu Links -->
-					<div class="icon-list">
-						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
-						<a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
-            <a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Projects</span></a>
-						<a href="index.html#blog"><i class="fa fa-fw fa-rss"></i><span>Blog</span></a>
-            <a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Skillset</span></a>
-						<a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
-					</div>
-				</nav>
-			    </div>
-			    <button class="menu-button" id="open-button"></button><!-- menu button -->
-              </div><!--/row-->
-            </div><!--/container-->
-		  <!-- Header Image -->
-          <section class="hero" id="hero">
-            <div class="container">
-			  <!-- Slider Button (don't edit!)-->
-              <div class="row">
-                <div class="col-md-12 text-right navicon">
-                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
-                </div>
-              </div>
-			  <!-- HEADER HEADLINE -->
-              <div class="row">
-                <div class="col-md-8 inner">
-                  <h1 class="animated fadeInDown">
-                    S<span style="color:#10405c;">I</span>M<span>A<span style="color:#FFE800">R</span></span>
-                  </h1><!-- Title -->
-                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Full Stack Developer</span></h3><!-- Text Rotator -->
-                </div>
-                <div class="col-md-4">
-                  <img src="img/portfolio/portfolio.jpg" class="main">
-                </div>
-              </div>
-			  <!-- Learn More Button -->
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
-			            <p>SEE MORE</p>
-			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
-			            </a>
-                </div>
-              </div>
+    <!-- ==================== HERO ==================== -->
+    <header id="home" class="hero-section">
+      <canvas id="particle-canvas"></canvas>
+      <div class="container hero-container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 hero-text-col hero-centered">
+            <p class="hero-greeting animated fadeInDown">&lt;hello world /&gt;</p>
+            <h1 class="hero-name animated fadeInDown delay-05s">
+              SIMAR<br><span class="gradient-text">DHIMAN</span>
+            </h1>
+            <div class="hero-typing animated fadeInUp delay-1s">
+              <span class="typing-prefix">&gt;&nbsp;</span>
+              <span id="typing-text"></span>
+              <span class="typing-cursor">|</span>
             </div>
-          </section>
-		  <!-- Header Image End -->
-        </header>
-		<!-- ==========================
-        HEADER SECTION END  
-        =========================== -->
-		
-		
-		
-		
-		<!-- ==========================
-        ABOUT SECTION  
-        =========================== -->
-        <section class="intro text-center section-padding color-bg" id="about">
-          <div class="container">
-		    <!-- WELCOME TEXT -->
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 wp1">
-                <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
-				<!-- about / welcome text -->
-                <p>As a full-stack developer with a strong interest in front-end development, I focus on creating intuitive and engaging digital experiences. 
-                  By blending aesthetics with functionality, I transform ideas into seamless and user-friendly interfaces that bring creativity to life.</p>
-              </div>
+            <p class="hero-tagline animated fadeInUp delay-1s">
+              Transforming data into decisions. Code into experiences.
+            </p>
+            <div class="hero-cta animated fadeInUp delay-1s">
+              <a href="#projects" class="btn-glow">View My Work</a>
+              <a href="#contact" class="btn-outline-glow">Get In Touch</a>
+            </div>
+            <div class="hero-social animated fadeInUp delay-1s">
+              <a href="https://www.linkedin.com/in/simar2002" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/simardhiman" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a>
+              <a href="mailto:dhiman.simar22@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
             </div>
           </div>
-        </section>
-
-
-
-  <!-- ==========================
-       PORTFOLIO SECTION
-   =========================== -->
-            <section class="swag text-center section-padding" id="portfolio">
-              <div class="container">
-	    	    <!-- Headline -->
-                <div class="row">
-                  <h1 class="arrow">
-                    Recent <span>Projects</span>
-                  </h1>
-                </div>
-              </div>
-            
-           <div class="container">
-            <div class="row" style="margin: 30px 0;">
-              <div class="col-md-6">
-                <div class="flip-card">
-                  <img src="img/portfolio/Fooder.png" alt="Fooder" class="avatar">
-                </div>
-              </div>
-              <div class="col-md-6 raw-text">
-                <h3>FooDer</h3>
-                <p style="color:#10405c;"><b>Fooder</b> is a vibrant food blogging website that showcases my passion and expertise in front-end development.
-                  Built using <b>AngularJS, HTML, CSS, and Bootstrap,</b>it offers an engaging experience where users can explore articles about cuisines from various countries. Additionally, Fooder features an interactive flip card game, 
-                  providing opportunities to win exciting offers.</p>
-               <a href="https://simardhiman.github.io/blog/" target="_blank" class="raw-btn">Visit</a>
-              </div>
-            </div>
-            <div class="row">
-              <!-- First Card -->
-              <div class="col-sm-4">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="img/portfolio/key.jpg" alt="KeyBoard" class="avatar">
-                      </div>
-                      <div class="flip-card-back">
-                        <h3>KeyBoard</h3>
-                        <p>A basic virtual <b>Keyboard</b> has been developed utilizing <b>JavaScript, HTML, CSS, and Bootstrap</b> to replicate and implement the full range of functionalities found in a standard physical keyboard.</p>
-                        <a href=" https://simardhiman.github.io/Keyboard/" target="_blank" class="weight-outline-btn">Visit</a>   
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!-- Second Card -->
-              <div class="col-sm-4">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="img/portfolio/calc.jpeg" alt="Calculator" class="avatar">
-                      </div>
-                      <div class="flip-card-back">
-                        <h3>Calculator</h3>
-                        <p>A basic virtual<b>Calculator</b> built using <b>JavaScript, HTML, CSS, and Bootstrap</b> implement and simulate the core functionalities of a standard calculator.</p>
-                        <a href=" https://simardhiman.github.io/Calculator/" target="_blank" class="weight-outline-btn">Visit</a>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!-- Third Card -->
-              <div class="col-sm-4">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="img/portfolio/form.jpeg" alt="Progress Form" class="avatar">
-                      </div>
-                      <div class="flip-card-back">
-                        <h3>Progress Form</h3>
-                        <p><b>Registration Form</b> with a progress bar, built using <b>JavaScript, HTML, CSS, and Bootstrap,</b> it highlights the integration of design and functionality.</p>
-                        <a href="https://simardhiman.github.io/Progress-Form/" target="_blank" class="weight-outline-btn">Visit</a>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-           </div>
-          </section>
-		<!-- ==========================
-        PORTFOLIO SECTION END
-        =========================== --
-			 -->
-
-
-
-
-
-
-
-
-
-
-		<div class="container-fluid" id="blog">
-		    <!-- About 1 -->
-			<div class="row color-bg">
-				<div class="col-md-6 nopadding features-intro-img">
-					<div class="about-image" style="background-image:url(img/about1.png)"></div><!-- about image 1 -->
-				</div>
-				<div class="col-md-6 about-text">
-					<h6>High quality web - design</h6><!-- headline-->
-					<p>As a full-stack developer, I bring a comprehensive understanding of both front-end and back-end development to my projects. However, my true passion lies in high-quality web design and front-end development, where creativity meets functionality. This enthusiasm has been instrumental in elevating the scale and impact of my projects, allowing me to craft visually appealing, user-friendly, and highly interactive interfaces that resonate with users while ensuring seamless integration with back-end systems.</p><br><!-- About Text 1 -->			
-				</div>
-			</div>
-			<!-- About 2 -->
-			<div class="row color-bg">
-				
-				<div class="col-md-6 about-text">
-					<h6>Writer</h6><!-- Headline-->
-					<p>Writing began as an accidental hobby but quickly grew into a meaningful creative outlet. I write under the pen name <b>Phoenix Flames</b>, a name that symbolizes resilience and the ability to rise through challenges, much like a phoenix emerging from the ashes. Through my writing, I explore themes of growth, transformation, and the beauty of persistence.</p><br><!-- About Text 3 -->					
-          
         </div>
-        <div class="col-md-6 nopadding features-intro-img">
-					<div class="about-image" style="background-image:url(img/about3.png)"></div><!-- about image 3 -->
-				</div>
-			</div>
-		</div>
-		<!-- ==========================
-        ABOUT SECTION END
-        =========================== -->	
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about">
+          <span>SCROLL</span>
+          <div class="scroll-line"></div>
+        </a>
+      </div>
+    </header>
 
-		
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-num">01</span>
+          <h2>About <span class="gradient-text">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <p class="about-bio reveal-on-scroll">
+              Technologist with <span class="highlight">1.9 years</span> of full-stack software engineering experience,
+              now specializing in <span class="highlight">Data Science</span>,
+              <span class="highlight">Machine Learning</span>, and
+              <span class="highlight">AI</span> through an MS in Data Science.
+              My experience spans building and maintaining production web applications
+              (Angular, TypeScript, SQL, MongoDB, REST APIs) as well as applied data analysis —
+              e-commerce inventory analytics, customer purchase pattern analysis, and AI governance research.
+              I'm comfortable translating ambiguous business questions into structured, data-backed answers.
+            </p>
+          </div>
+        </div>
+        <div class="row stats-row">
+          <div class="col-md-3 col-sm-6">
+            <div class="stat-card reveal-on-scroll">
+              <div class="stat-value">
+                <span class="counter" data-target="1.9">0</span><span class="stat-suffix">+</span>
+              </div>
+              <p class="stat-label">Years Experience</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="stat-card reveal-on-scroll">
+              <div class="stat-value">
+                <span class="counter" data-target="50">0</span><span class="stat-suffix">+</span>
+              </div>
+              <p class="stat-label">Apps Migrated</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="stat-card reveal-on-scroll">
+              <div class="stat-value">
+                <span class="counter" data-target="1.5">0</span><span class="stat-suffix">M+</span>
+              </div>
+              <p class="stat-label">Records Processed</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="stat-card reveal-on-scroll">
+              <div class="stat-value">
+                <span class="counter" data-target="20">0</span><span class="stat-suffix">K+</span>
+              </div>
+              <p class="stat-label">Users Served</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-			
-		<!-- ==========================
-        CUSTOM SPACER
-        =========================== -->
-		<div class="spacer-cta text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <a href="index.html#contact" class="outline-btn">Hire Simar</a>
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-num">02</span>
+          <h2>Work <span class="gradient-text">Experience</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header-row">
+                <h3>Software Engineer</h3>
+                <span class="timeline-date"><i class="fa fa-calendar"></i> April 2022 — January 2024</span>
+              </div>
+              <h4 class="timeline-company"><i class="fa fa-building"></i> PatientBond India Pvt. Ltd. — Mohali</h4>
+              <ul class="timeline-points">
+                <li>Developed and optimized scalable web applications using Angular, TypeScript, SQL, MongoDB, and REST APIs, spanning a content library, website builder, and data validation platforms.</li>
+                <li>Migrated 50+ legacy applications to Angular 14, improving maintainability and performance across the product suite.</li>
+                <li>Worked with large-scale datasets involving 1.5M+ Excel files and 20,000+ users, building hands-on experience in data processing and data-driven application development.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Angular</span><span>TypeScript</span><span>SQL</span><span>MongoDB</span><span>REST APIs</span><span>Data Validation</span>
               </div>
             </div>
           </div>
         </div>
-		<!-- ==========================
-        CUSTOM SPACER END
-        =========================== -->
+      </div>
+    </section>
 
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-num">03</span>
+          <h2>Featured <span class="gradient-text">Projects</span></h2>
+          <div class="section-line"></div>
+        </div>
 
-    <!-- ==========================
-       SERVICE SECTION 
-     =========================== -->
-        <section class="features text-center section-padding" id="service">
-          <div class="container">
-              <!-- Headline -->
-              <div class="row">
-                  <div class="col-md-12">
-                      <h1 class="arrow">Languages I'm fluent in</h1>
+        <!-- D-Cube Dental -->
+        <div class="project-card reveal-on-scroll">
+          <div class="glass-card">
+            <div class="row project-row">
+              <div class="col-md-5">
+                <div class="project-visual has-image">
+                  <img src="img/portfolio/dcube-dental.svg" alt="D-Cube Dental">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="project-info">
+                  <span class="project-date">January 2026</span>
+                  <h3>D-Cube Dental</h3>
+                  <p class="project-subtitle">Clinic Website & Booking System</p>
+                  <p>Built a full-stack Next.js dental clinic website with a real-time, race-safe appointment booking system and automated WhatsApp/email confirmations. Designed a content-driven architecture that auto-generates 12+ service pages from a single config file, plus rate limiting, abuse protection, and SEO infrastructure.</p>
+                  <div class="tech-tags">
+                    <span>Next.js</span><span>MongoDB</span><span>SEO</span><span>Server-side Validation</span>
                   </div>
-              </div>
-              <!-- FlexSlider -->
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="flexslider">
-                          <ul class="slides">
-                              <!-- Slide 1 -->
-                              <li class="services">
-                                  <div class="row">
-                                      <div class="col-md-4 wp2 item">
-                                          <div class="icon">
-                                              <img src="img/portfolio/html.png" alt="HTML">
-                                          </div>
-                                          <h2>HTML</h2>
-                                      </div>
-                                      <div class="col-md-4 wp2 item">
-                                          <div class="icon">
-                                              <img src="img/portfolio/css.png" alt="CSS">
-                                          </div>
-                                          <h2>CSS</h2>
-                                      </div>
-                                      <div class="col-md-4 wp2 item">
-                                          <div class="icon">
-                                              <img src="img/portfolio/javascript.png" alt="JavaScript">
-                                          </div>
-                                          <h2>JavaScript</h2>
-                                      </div>
-                                  </div>
-                              </li>
-                              <!-- Slide 2 -->
-                              <li class="services">
-                                  <div class="row">
-                                      <div class="col-md-4 wp2 item">
-                                          <div class="icon">
-                                              <img src="img/portfolio/Typescript.png" alt="TypeScript">
-                                          </div>
-                                          <h2>TypeScript</h2>
-                                      </div>
-                                      <div class="col-md-4 wp2 item">
-                                          <div class="icon">
-                                              <img src="img/portfolio/angular.webp" alt="Angular">
-                                          </div>
-                                          <h2>Angular</h2>                                          
-                                      </div>
-                                      <div class="col-md-4 wp2 item">
-                                          <div class="icon">
-                                              <img src="img/portfolio/mongo.jpeg" alt="MongoDB">
-                                          </div>
-                                          <h2>MongoDB</h2>
-                                      </div>
-                                    
-                                  </div>
-                              </li>
-                              <!-- Slide 3 -->
-                              <li class="services">
-                                <div class="row">
-                                    <div class="col-md-4 wp2 item">
-                                      <div class="icon">
-                                          <img src="img/portfolio/node.png" alt="NodeJS">
-                                      </div>
-                                      <h2>NodeJS</h2>
-                                    </div>
-                                    <div class="col-md-4 wp2 item">
-                                        <div class="icon">
-                                            <img src="img/portfolio/python.png" alt="Python">
-                                        </div>
-                                        <h2>Python</h2>                                          
-                                    </div>
-                                    <div class="col-md-4 wp2 item">
-                                        <div class="icon">
-                                            <img src="img/portfolio/sql.jpeg" alt="SQL">
-                                        </div>
-                                        <h2>SQL</h2>
-                                    </div>
-                                </div>
-                            </li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-		
-		
-
-		
-		<!-- ==========================
-        CONTACT SECTION
-        =========================== -->
-        <section class="text-center contact-wrap color-bg" id="contact">
-		  <!-- To Top Button -->
-          <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-          <div class="container">
-		    <!-- Headline -->
-            <div class="row" style="padding-top:20px;">
-              <div class="col-md-12">
-                <h1 class="arrow">Drop <span>me</span> a line</h1>
-              </div>
-            </div>
-            <div class="row contact-details">
-			  <!-- Phone Number Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-                  <p>+91 9463696006</p>
                 </div>
-              </div>
-        <!-- Linked-In  -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><img src="img/portfolio/linkedIn.png" alt="LinkedIn" style="width:20px;"><span>LinkedIn</span></h2>
-                  <p><a href="https://www.linkedin.com/in/simar2002" target="_blank">www.linkedin.com/in/simar2002</a></p>
-                </div>
-              </div>
-			  <!-- E-Mail Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-                  <p>smrdhn22@gmail.com</p>
-                </div>
-              </div>
-            </div>            
-          </div>
-        </section>
-		<!-- ==========================
-        CONTACT SECTION END
-        =========================== -->
-		
-		
-		
-		<!-- ==========================
-        FOOTER SECTION
-        =========================== -->
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <p>All Rights Reserved. &copy; 2024 </p>
               </div>
             </div>
           </div>
-        </footer>
-		<!-- ==========================
-        FOOTER SECTION END
-        =========================== -->		
-		
-		
-    <!-- jQuery -->
+        </div>
+
+        <!-- OList Analysis -->
+        <div class="project-card reveal-on-scroll">
+          <div class="glass-card">
+            <div class="row project-row">
+              <div class="col-md-5 col-md-push-7">
+                <div class="project-visual has-image">
+                  <img src="img/portfolio/olist-analytics.svg" alt="OList Analytics">
+                </div>
+              </div>
+              <div class="col-md-7 col-md-pull-5">
+                <div class="project-info">
+                  <span class="project-date">October 2025</span>
+                  <h3>OList Inventory Optimization</h3>
+                  <p class="project-subtitle">E-Commerce Data Analysis</p>
+                  <p>Analyzed 110,000+ order items across 71 product categories. Applied Pareto (80-20) analysis identifying that 28.1% of products drove 80% of revenue. Used Apriori algorithm for association rules, uncovering that 89.7% of orders were single-category — supporting a focused inventory strategy.</p>
+                  <div class="tech-tags">
+                    <span>Python</span><span>Pandas</span><span>mlxtend</span><span>Data Visualization</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FooDer -->
+        <div class="project-card reveal-on-scroll">
+          <div class="glass-card">
+            <div class="row project-row">
+              <div class="col-md-5">
+                <div class="project-visual has-image">
+                  <img src="img/portfolio/Fooder.png" alt="FooDer">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="project-info">
+                  <span class="project-date">May — June 2022</span>
+                  <h3>FooDer</h3>
+                  <p class="project-subtitle">Food Blogging App</p>
+                  <p>Built an interactive food blogging application with flip-card games and dynamic forms designed to engage users and capture interaction data for analysis.</p>
+                  <div class="tech-tags">
+                    <span>AngularJS</span><span>JavaScript</span><span>HTML</span><span>Bootstrap</span>
+                  </div>
+                  <a href="https://simardhiman.github.io/blog/" target="_blank" rel="noopener" class="project-link">
+                    <i class="fa fa-external-link"></i> Live Site
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <div class="cta-section">
+      <div class="container text-center">
+        <h2 class="reveal-on-scroll">Interested in working together?</h2>
+        <a href="#contact" class="btn-glow reveal-on-scroll">Let's Talk</a>
+      </div>
+    </div>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-num">04</span>
+          <h2>Tech <span class="gradient-text">Arsenal</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row skills-grid">
+          <div class="col-md-4 col-sm-6">
+            <div class="skill-category glass-card reveal-on-scroll">
+              <div class="skill-icon"><i class="fa fa-database"></i></div>
+              <h3>Analytics & Data</h3>
+              <div class="skill-tags">
+                <span>SQL</span><span>Python</span><span>Pandas</span><span>NumPy</span><span>Tableau</span><span>Power BI</span><span>Data Visualization</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="skill-category glass-card reveal-on-scroll">
+              <div class="skill-icon"><i class="fa fa-code"></i></div>
+              <h3>Product & Engineering</h3>
+              <div class="skill-tags">
+                <span>TypeScript</span><span>JavaScript</span><span>Angular</span><span>React</span><span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>HTML5</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="skill-category glass-card reveal-on-scroll">
+              <div class="skill-icon"><i class="fa fa-cloud"></i></div>
+              <h3>Databases & Cloud</h3>
+              <div class="skill-tags">
+                <span>MySQL</span><span>MongoDB</span><span>Azure</span><span>AWS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-md-offset-2 col-sm-6">
+            <div class="skill-category glass-card reveal-on-scroll">
+              <div class="skill-icon"><i class="fa fa-flask"></i></div>
+              <h3>AI & Responsible AI</h3>
+              <div class="skill-tags">
+                <span>AI Governance</span><span>Ethics</span><span>ML Fundamentals</span><span>Model Risk</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="skill-category glass-card reveal-on-scroll">
+              <div class="skill-icon"><i class="fa fa-wrench"></i></div>
+              <h3>Tools & Collaboration</h3>
+              <div class="skill-tags">
+                <span>Git</span><span>API Integration</span><span>Debugging</span><span>PageSpeed</span><span>SEO</span><span>Photoshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION & RESEARCH ==================== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-num">05</span>
+          <h2>Education <span class="gradient-text">& Research</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="edu-card glass-card reveal-on-scroll">
+              <div class="edu-icon"><i class="fa fa-graduation-cap"></i></div>
+              <span class="edu-date">Oct 2025 — Present</span>
+              <h3>MS, Data Science</h3>
+              <h4>Liverpool John Moores University</h4>
+              <p class="edu-detail">Thesis: Ethics, Governance & Human Interaction with AI</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="edu-card glass-card reveal-on-scroll">
+              <div class="edu-icon"><i class="fa fa-certificate"></i></div>
+              <span class="edu-date">Sep 2024 — Oct 2025</span>
+              <h3>Executive PGD, Data Science & AI</h3>
+              <h4>IIIT Bangalore</h4>
+              <p class="edu-detail">CGPA: 3.67 / 4.00</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="edu-card glass-card reveal-on-scroll">
+              <div class="edu-icon"><i class="fa fa-university"></i></div>
+              <span class="edu-date">Jun 2019 — Jul 2023</span>
+              <h3>B.E., Computer Science</h3>
+              <h4>Chitkara University</h4>
+              <p class="edu-detail">CGPA: 9.65 / 10</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Spotlight -->
+        <div class="research-spotlight glass-card reveal-on-scroll">
+          <div class="row">
+            <div class="col-md-1 text-center research-icon-col">
+              <div class="research-icon"><i class="fa fa-flask"></i></div>
+            </div>
+            <div class="col-md-11">
+              <span class="research-badge">Ongoing Research</span>
+              <h3>Ethics, Governance & Human Interaction with AI</h3>
+              <h4>Thesis — Liverpool John Moores University</h4>
+              <p>Investigating the ethical risks of AI misuse — particularly AI-generated misinformation and deepfake technology — and evaluating the effectiveness of governance frameworks such as the EU AI Act. Uses a mixed-methods design combining systematic literature review with analysis of public datasets (RAID, FakeAVCeleb, AI Incident Database) and qualitative thematic analysis.</p>
+              <div class="tech-tags">
+                <span>AI Ethics</span><span>EU AI Act</span><span>Deepfakes</span><span>Misinformation</span><span>Mixed Methods</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WRITER / BEYOND CODE ==================== -->
+    <section class="section section-alt" id="writer">
+      <div class="container">
+        <div class="row writer-row">
+          <div class="col-md-6 reveal-on-scroll">
+            <div class="writer-image" style="background-image:url(img/about3.png)"></div>
+          </div>
+          <div class="col-md-6 reveal-on-scroll">
+            <div class="writer-content">
+              <span class="section-num">06</span>
+              <h2>Beyond <span class="gradient-text">Code</span></h2>
+              <h3 class="writer-pen">Phoenix Flames</h3>
+              <p>Writing began as an accidental hobby but quickly grew into a meaningful creative outlet. I write under the pen name <span class="highlight">Phoenix Flames</span>, a name that symbolizes resilience and the ability to rise through challenges, much like a phoenix emerging from the ashes. Through my writing, I explore themes of growth, transformation, and the beauty of persistence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-num">07</span>
+          <h2>Get In <span class="gradient-text">Touch</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row contact-row">
+          <div class="col-md-3 col-sm-6">
+            <div class="contact-card glass-card reveal-on-scroll">
+              <div class="contact-icon"><i class="fa fa-phone"></i></div>
+              <h3>Phone</h3>
+              <p>+91 9463696006</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="contact-card glass-card reveal-on-scroll">
+              <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+              <h3>Email</h3>
+              <p><a href="mailto:dhiman.simar22@gmail.com">dhiman.simar22@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="contact-card glass-card reveal-on-scroll">
+              <div class="contact-icon"><i class="fa fa-linkedin"></i></div>
+              <h3>LinkedIn</h3>
+              <p><a href="https://www.linkedin.com/in/simar2002" target="_blank" rel="noopener">simar2002</a></p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="contact-card glass-card reveal-on-scroll">
+              <div class="contact-icon"><i class="fa fa-map-marker"></i></div>
+              <h3>Location</h3>
+              <p>Panchkula, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="footer-social">
+              <a href="https://www.linkedin.com/in/simar2002" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/simardhiman" target="_blank" rel="noopener"><i class="fa fa-github"></i></a>
+              <a href="mailto:dhiman.simar22@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+            <p class="footer-text">Designed & Built by Simar Dhiman</p>
+            <p class="footer-copyright">&copy; 2026 All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- SmoothScroll -->           
-    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
-    <!-- Bootstrap -->
+    <script src="assets/smoothscroll/smoothscroll.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/waypoints.min.js"></script>
-    <!-- classie.js -->
-	<script src="js/classie.js"></script>
-    <!-- FlexSlider -->
-    <script src="assets/flexslider/jquery.flexslider.js"></script>
-	<!-- Modernizr -->
-    <script src="js/modernizr.js"></script>
-	<!-- Text Rotator -->
-	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
-	<!-- Lightbox.js -->
-    <script src="assets/lightbox/js/lightbox.min.js"></script>
-    <!-- Google Maps --> 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
-	<!-- Theme JavaScript Core -->
-	<script src="js/main.js"></script>
-	<script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 
-	<!-- SIDER1 -->
-  <script type="text/javascript">
-    $('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: true,
-        directionNav: false,
-    });
-  </script>
-	
-	<!-- TEXT ROTATOR SETTINGS -->
-    <script type="text/javascript">
-    $(".rotate").textrotator({
-      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-      speed: 2000 // How many milliseconds until the next word show.
-    });
-    </script>
-
-  <!-- CARD ROTATE SCRIPT -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          const flipCards = document.querySelectorAll(".flip-card-inner");
-
-          const observer = new IntersectionObserver(
-              (entries) => {
-                  entries.forEach((entry) => {
-                      if (entry.isIntersecting) {
-                          // Add the flip class to start the flip
-                          entry.target.classList.add("flip-on-scroll");
-
-                          // Remove the flip class after 1 second to flip back
-                          setTimeout(() => {
-                              entry.target.classList.remove("flip-on-scroll");
-                          }, 1000); // 1-second flip duration
-                      }
-                  });
-              },
-              { threshold: 0.5 } // Trigger when 50% of the card is visible
-          );
-
-          flipCards.forEach((card) => observer.observe(card));
-      });
-    </script>
-    </body>
+  </body>
 </html>
